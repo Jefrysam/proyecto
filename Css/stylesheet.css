@@ -1,0 +1,124 @@
+.titulos{   
+    height: 6.75em;
+             
+}
+#h1_dategusto{
+    display: inline; 
+    width: 50%;
+    font-family: cursive;
+    font-size: 5em;
+    padding: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color:rgb(246, 158, 22);  
+    
+} 
+.barra_nav_inicio{
+    background-color: rgb(83, 44, 44);
+    transition: all 0.2s;    
+}
+.barra_nav{
+    float: right;            
+    font-size: 2em;
+    padding: 1em;
+    width: 50%;    
+}
+.barra_nav a{
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    color: goldenrod;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    border-radius: 45px;
+    
+}
+a:hover{
+    color:aqua;
+}
+.content{
+    background:radial-gradient(circle, rgb(246, 158, 22), rgb(255, 102, 0));
+    height: fit-content;
+    width: 100%;  
+    display: flex;
+}
+.content p{
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5em;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 0em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content img{
+    /*float: right;*/
+    width: 50%;  
+    height: auto;
+    justify-content: center;    
+}
+.taglist{
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    padding-left: 30px;
+}
+.inner{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    animation: loop 20s linear infinite;
+    caret-color: transparent;
+}
+.inner img{
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    max-width: none;
+    
+}
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    padding: 0;
+}
+.fade{
+    position: absolute;
+    background: linear-gradient(90deg, #e46515, transparent 10%, transparent 90.1%, rgb(246, 158, 22));
+    inset: 0;
+    pointer-events: none;    
+}
+@keyframes loop {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .content {
+        display: inline-block;                    
+    }
+    .content img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        padding: 1em !important;
+    }
+    h3{
+        padding: 0.3em !important;
+    }
+    .taglist{
+        display: none;
+    }
+
+}

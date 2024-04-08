@@ -1,0 +1,60 @@
+
+.titulos{   
+    height: 6.75em; 
+    display: flexbox; 
+}
+#h1_dategusto{
+    display: inline; 
+    font-family: cursive;
+    font-size: 5em;
+    padding: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color:rgb(246, 158, 22);      
+} 
+.barra_nav_nosotros{    
+    background-color: rgb(83, 44, 44);
+    transition: all 0.2s;    
+}
+.barra_nav{
+    float: right;        
+    /*display: inline-block;*/  /*i dont know why this isnt necesary but it works anyway*/
+    font-size: 2em;
+    padding: 1em;
+    width: 50%;    
+}
+.barra_nav a{
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    color: goldenrod;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    border-radius: 45px;
+    
+}
+a:hover{
+    color:aqua;
+}
+
+.content{
+    background:radial-gradient(circle, rgb(246, 158, 22), rgb(255, 102, 0));
+    height: 40em;
+    width: 100%;
+}
+
+/*aqui empieza lo nuevo */
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    padding: 15px;  
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 600px) {
+    h3{
+        padding: 0.3em !important;
+    }
+}
+
+

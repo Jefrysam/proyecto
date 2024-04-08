@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/registrate.css">
+    <link rel="stylesheet" href="../Css/normalize.css">
+    <link rel="shortcut icon" href="../Imagenes/hamburguesaMenu.png">
+    <title>Restaurante</title>
+</head>
+<body style="background:linear-gradient(to right, rgb(192, 68, 19), rgb(233, 103, 103));" >
+    <header class= "titulos" >        
+        <h1 id="h1_dategusto">date gusto</h1>
+        <div class="barra_nav">
+            <a href="../index.html" class="barra_nav_incio">Inicio</a>
+            <a href="./menu.html">menu</a>
+            <a href="./nosotros.html">nosotros</a>
+            <a href="#" class="barra_nav_registrate">Inciar sesion</a>
+        </div>              
+    </header>    
+    <div class="content">
+        <!--TAREA CREAR EL OTRO FORMULARIO QUE IRA ANTES QUE ESTE.:-->
+        <div class="form-container" id="IniciarSesion">
+            <form>
+                <label for="username">Nombre de usuario:</label><br>
+                <input type="text" id="usernameUsser" name="username"><br>
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="passwordUsser" name="password"><br>
+                <input type="submit" value="Entrar">
+                <br>
+                <input id = "solicitarRegistro" type="submit" value="Registarse">
+            </form>
+        </div>
+        
+        <div class="form-container" id="registrarse" style="display: none;">
+                <form>
+                    <label for="username">Nombre de usuario:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password"><br>                    
+                    <label for="email">Correo electronico:</label><br>
+                    <input type="email" id = "email" name="email"><br>
+                    <input type="submit" value="Enviar">
+                </form>
+        </div>
+        
+    </div>
+        
+    </div> 
+    <footer>        
+    </footer>
+    <script src="../Js/IniciarSecion.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/menu.css">
+    <link rel="stylesheet" href="../Css/normalize.css">
+    <link rel="shortcut icon" href="../Imagenes/hamburguesaMenu.png">
+    <title>Restaurante</title>
+</head>
+<body style="background:linear-gradient(to right, rgb(192, 68, 19), rgb(233, 103, 103));">
+    <header class= "titulos" >        
+        <h1 id="h1_dategusto">date gusto</h1>
+        <div class="barra_nav">
+            <a href="../index.html" class="barra_nav_incio">Inicio</a>
+            <a href="#" class="barra_nav_menu">menu</a>
+            <a href="./nosotros.html">nosotros</a>
+            <a href="./registrate.html" class="barra_nav_registrate">Inciar sesion</a>
+        </div>              
+    </header>
+    <!--PAGINA-->    
+    <div  class="content">       
+        <form  id="Menu01" class="grid-container">
+            <!-- Repite este bloque para cada platillo -->
+            <div class="grid-item">
+                <label for="precio">Precio: 20000</label><br>
+                <img src="../Imagenes/pizzaMenu.png" alt="pizzaMenu">
+                <p>PIZZA</p>
+                <div>                    
+                    <label for="cantidad">Cantidad:</label>                    
+                    <input type="number" id="CantidadPizza" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!-- Fin del bloque para cada platillo -->
+            <!--burrito-->
+            <div class="grid-item">
+                <label for="precio">Precio: 5000</label><br>
+                <img src="../Imagenes/BurritoMenu.png" alt="BurritoMenu">
+                <p>BURRITO</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="CantidadBurrito" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--hamburguesa-->
+            <div class="grid-item">
+                <label for="precio">Precio: 10000</label><br>
+                <img src="../Imagenes/hamburguesaMenu.png" alt="hamburguesaMenu">
+                <p>HAMBURGUESA</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--Nuggets-->            
+            <div class="grid-item">
+                <label for="precio">Precio: 13000</label><br>
+                <img src="../Imagenes/NugguetsPolloMenu.png" alt="NugguetsPolloMenu">
+                <p>POLLO NUGGUETS</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--papas fritas-->            
+            <div class="grid-item">
+                <label for="precio">Precio: 4000</label><br>
+                <img src="../Imagenes/PapasFritasMenu.png" alt="PapasFritasMenu">
+                <p>PAPAS FRITAS</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--hot dogs-->
+            <div class="grid-item">
+                <label for="precio">Precio: 5000</label><br>
+                <img src="../Imagenes/HotDogMenu.png" alt="HotDogMenu">
+                <p>PERRO CALIENTE</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--sandwichesa are there-->
+            <div class="grid-item">
+                <label for="precio">Precio: 5000</label><br>
+                <img src="../Imagenes/sandwich.png" alt="sandwich">
+                <p>SANDWICH</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--gaseosa pepsi-->
+            <div class="grid-item">
+                <label for="precio">Precio: 3000</label><br>
+                <img src="../Imagenes/pepsi.png" alt="pepsi">
+                <p>BASO DE PEPSI</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--proteina-->
+            <div class="grid-item">
+                <label for="precio">Precio: 60000</label><br>
+                <img src="../Imagenes/proteina.png" alt="proteina">
+                <p>PROTEINA</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+            <!--malteada-->
+            <div class="grid-item">
+                <label for="precio">Precio: 6000</label><br>
+                <img src="../Imagenes/malteada.png" alt="malteada">
+                <p>MALTEADA CHOCOLATE</p>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                </div>
+            </div>
+
+        </form>        
+    
+
+    <!--aqui lo del formulario-->
+        <div id="formContainer" style="display: none;">
+            <form id="myForm">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion"><br>
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo"><br>
+                <label for="id">ID:</label><br>
+                <input type="text" id="id" name="id"><br>
+                <label for="celular">Celular:</label><br>
+                <input type="tel" id="celular" name="celular"><br>            
+                <label for="MensagePrecio">PRECIO:</label><br>
+                <label for="Precio">aqui precio:</label><br><br>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </div> 
+    <div class="enviar" id="botonEnviar">
+        <button id="buttonEnviar" >ORDENAR</button>
+    </div>
+    <footer>
+       
+    </footer>
+    <script src="../Js/menu.js">       
+    </script>
+</body>
+</html>

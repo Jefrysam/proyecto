@@ -1,0 +1,161 @@
+
+.titulos{   
+    height: 6.75em;  
+}
+#h1_dategusto{
+    display: inline; 
+    font-family: cursive;
+    font-size: 5em;
+    padding: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color:rgb(246, 158, 22);      
+} 
+.barra_nav_menu{
+    background-color: rgb(83, 44, 44);
+    transition: all 0.2s;
+    
+}
+.barra_nav{
+    float: right;        
+    /*display: inline-block;*/  /*i dont know why this isnt necesary but it works anyway*/
+    font-size: 2em;
+    padding: 1em;
+    width: 50%;    
+}
+.barra_nav a{
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    color: goldenrod;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    border-radius: 45px;
+    
+}
+a:hover{
+    color:aqua;
+}
+.content{
+    background:radial-gradient(circle, rgb(246, 158, 22), rgb(255, 102, 0));
+    display: flex;
+    width: 100%;
+}
+
+.content img{
+    width: 136px;
+    height: 136px;              
+}
+.content img:hover{
+    transition: all 1.6s;
+    transform: scale(1.1);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* aqui empieza lo nuevo*/ 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color:rgb(255, 255, 255);
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*.grid-item img {
+    width: 100%;
+    height: auto;
+}*/
+
+.grid-item p {
+    margin: 10px 0;
+}
+
+.grid-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item input[type="number"] {
+    margin-left: 5px;
+}
+
+.enviar{
+    text-align: center;
+    display: block;   
+    height: 3em;
+    font-family:sans-serif;
+    padding: 5px;
+}  
+.enviar button{    
+    height: 90%;
+    width: 5.8em;
+    border-radius: 25px;
+    border-color: cyan;
+    background-color: rgb(255,209, 0);      
+}
+.enviar button:hover{    
+    background-color: blueviolet;
+    color: white;
+    transition: all 0.2s;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 745px) {
+    .grid-container {
+        grid-template-columns: 3fr;        
+    }
+    h3{
+        padding: 0.3em !important;
+    }
+}
+/*aqui lo del emergente*/
+#formContainer {   
+    display:flex; 
+    width: 280px;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formContainer form {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#formContainer label {
+    margin-bottom: 5px;
+}
+
+#formContainer input[type="text"], input[type="email"], input[type="tel"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#formContainer input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
