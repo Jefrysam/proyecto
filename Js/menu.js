@@ -2,6 +2,7 @@ var Precios = []
 //Aqui deberia crear la logica para los precios pero eso despues jsjs
 //hay que crear un id para cada uno o buscar otra forma para tomar el precio mostrado
 //y multiplicarlo por la cantidad ingresada en el label
+//el que tome la tarea, muchas gracias si no ya lo are despues
 
 document.getElementById("buttonEnviar").addEventListener('click', function() {
     document.getElementById('formContainer').style.display = 'flex';
